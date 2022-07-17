@@ -11,13 +11,15 @@ import Blogs from './components/Blogs/Blogs';
 
 function App() {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route exact path="/blogs" element={<Blogs/>} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="App">
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path="/blogs" element={<Blogs/>} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

@@ -25,11 +25,25 @@ const Blogs = () => {
             images: [
                 IMG1, IMG2
             ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
         }
     ];
 
     return (
-        <div>
+        <div className="blogs_container">
             <div class="webinar-grid">
                 {
                     allBlogs.map((blog) => (
