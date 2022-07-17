@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Blogs from './components/Blogs/Blogs';
 import Events from './components/Events/Events';
+import BlogPage from './components/Blogs/BlogPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/blogs" element={<Blogs/>} />
           <Route exact path="/events" element={<Events/>}/>
+          <Route exact path="/blog/:id" element={<BlogPage/>}/>
         </Routes>
         <Footer />
       </Router>

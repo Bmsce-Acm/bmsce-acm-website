@@ -1,74 +1,10 @@
 import React from "react";
-import IMG1 from '../../Images/img1.jpg';
-import IMG2 from '../../Images/img2.png';
+import {getAllBlogs} from '../../Api/blogsApi.js';
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
 
-    const allBlogs = [
-        {
-            title: "How Center6 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center3 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center1 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        },
-        {
-            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
-            description: "How Center7 Empowers your Customers with White Labeled",
-            images: [
-                IMG1, IMG2
-            ]
-        }
-    ];
+    const allBlogs = getAllBlogs();
 
     return (
         <div className="blogs_container">
@@ -76,17 +12,23 @@ const Blogs = () => {
             <div className="webinar-grid">
                 {
                     allBlogs.map((blog) => (
-                        <a href="#" className="link-block">
+                        <a href="" className="link-block">
                             <div className="jumbotron left-right-jumbotron-block">
                                 <div className="webinar-image-container">
-                                    <img src={IMG1} />
+                                    <img src={blog.images[0]} />
                                 </div>
                                 <h1 className="dundas-blue-text-long">
                                     {blog.title}
                                 </h1>
                                 <div className="webinar-content-box">
                                     <p>{blog.description}</p>
-                                    <span className="dundas-blue-link">View webinar &gt;</span>
+                                    <Link to={`/blog/${blog.id}`}>
+                                        <span 
+                                            className="dundas-blue-link"
+                                        >
+                                            View webinar &gt;
+                                        </span>
+                                    </Link>
                                 </div>
                             </div>
                         </a>
