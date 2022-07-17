@@ -8,6 +8,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Blogs from './components/Blogs/Blogs';
+import Events from './components/Events/Events';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/blogs" element={<Blogs/>} />
+          <Route exact path="/events" element={<Events/>}/>
         </Routes>
         <Footer />
       </Router>

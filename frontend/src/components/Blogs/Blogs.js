@@ -39,26 +39,54 @@ const Blogs = () => {
             images: [
                 IMG1, IMG2
             ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
+        },
+        {
+            title: "How Center7 Empowers their Customers with White Labeled Dundas BI Analyti",
+            description: "How Center7 Empowers your Customers with White Labeled",
+            images: [
+                IMG1, IMG2
+            ]
         }
     ];
 
     return (
         <div className="blogs_container">
-            <div class="webinar-grid">
+            <h1>BLOGS</h1>
+            <div className="webinar-grid">
                 {
                     allBlogs.map((blog) => (
                         <a href="#" className="link-block">
-                            <div class="jumbotron left-right-jumbotron-block">
-                                <div class="webinar-image-container">
+                            <div className="jumbotron left-right-jumbotron-block">
+                                <div className="webinar-image-container">
                                     <img src={IMG1} />
                                 </div>
-                                <h1 class="dundas-blue-text-long">
+                                <h1 className="dundas-blue-text-long">
                                     {blog.title}
                                 </h1>
-
-                                <div class="webinar-content-box">
+                                <div className="webinar-content-box">
                                     <p>{blog.description}</p>
-                                    <span class="dundas-blue-link">View webinar &gt;</span>
+                                    <span className="dundas-blue-link">View webinar &gt;</span>
                                 </div>
                             </div>
                         </a>

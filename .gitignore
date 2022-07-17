@@ -13,6 +13,8 @@ backend/config/config.env
 .env.development.local
 .env.test.local
 .env.production.local
+*.jpg
+*.png
 
 .vscode/settings.json
 frontend/src/components/Cart/Payment.js
@@ -40,3 +42,5 @@ frontend/src/components/Cart/Payment.js
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/Images

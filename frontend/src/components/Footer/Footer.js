@@ -49,7 +49,7 @@ const Footer = () => {
 				</div>
 
 				<div class="row copyright">
-					<p>Copyright &copy; 2021 Foolish Developer</p>
+					<p>Copyright &copy; 2022 BMSCE-ACM</p>
 				</div>
 			</footer>
 		</div>
