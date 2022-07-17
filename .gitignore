@@ -31,6 +31,9 @@ frontend/src/components/Cart/Payment.js
 # production
 /frontend/build
 
+/Api
+Api
+
 # misc
 /backend/config/config.env
 /frontend/.DS_Store
