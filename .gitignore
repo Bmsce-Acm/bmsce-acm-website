@@ -4,6 +4,9 @@
 # production
 /frontend/build
 
+/Api
+Api
+
 # misc
 /backend/config/config.env
 backend/config/config.env
@@ -45,5 +48,3 @@ Api
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-/Images
