@@ -1,2 +1,47 @@
+<<<<<<< HEAD
 @import url('./styles/footerStyles.css');
 @import url('./styles/header.css');
+=======
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@import url('./styles/footerStyles.css');
+@import url('./styles/blogsStyles.css');
+@import url('./styles/eventsStyle.css');
+>>>>>>> 59c9a67f321de13cdc88f851c5e4662d4245e56b
